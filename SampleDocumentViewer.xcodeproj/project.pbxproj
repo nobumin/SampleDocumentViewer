@@ -32,9 +32,12 @@
 		C2552B5D1765C5E200168CAA /* PlayerControllerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2552B561765C5E200168CAA /* PlayerControllerView.xib */; };
 		C2552B631765C61000168CAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2552B5F1765C61000168CAA /* AppDelegate.m */; };
 		C2552B641765C61000168CAA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2552B611765C61000168CAA /* ViewController.m */; };
-		C2552B651765C61000168CAA /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2552B621765C61000168CAA /* ViewController.xib */; };
 		C2552B691765C61F00168CAA /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2552B671765C61F00168CAA /* WebViewController.m */; };
 		C2552B6A1765C61F00168CAA /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2552B681765C61F00168CAA /* WebViewController.xib */; };
+		C29A819E17745A0A00C73622 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C29A819D17745A0A00C73622 /* ViewController.xib */; };
+		C2BEE1781774575C00BA8DC3 /* ctrl.png in Resources */ = {isa = PBXBuildFile; fileRef = C2BEE1741774575C00BA8DC3 /* ctrl.png */; };
+		C2BEE1791774575C00BA8DC3 /* AudioPlayerControllerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BEE1761774575C00BA8DC3 /* AudioPlayerControllerView.m */; };
+		C2BEE17A1774575C00BA8DC3 /* AudioPlayerControllerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2BEE1771774575C00BA8DC3 /* AudioPlayerControllerView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,10 +75,15 @@
 		C2552B5F1765C61000168CAA /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C2552B601765C61000168CAA /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C2552B611765C61000168CAA /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		C2552B621765C61000168CAA /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		C2552B661765C61F00168CAA /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		C2552B671765C61F00168CAA /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		C2552B681765C61F00168CAA /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
+		C29A819D17745A0A00C73622 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		C29A819F17745DA300C73622 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C2BEE1741774575C00BA8DC3 /* ctrl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ctrl.png; sourceTree = "<group>"; };
+		C2BEE1751774575C00BA8DC3 /* AudioPlayerControllerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayerControllerView.h; sourceTree = "<group>"; };
+		C2BEE1761774575C00BA8DC3 /* AudioPlayerControllerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayerControllerView.m; sourceTree = "<group>"; };
+		C2BEE1771774575C00BA8DC3 /* AudioPlayerControllerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AudioPlayerControllerView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,12 +142,13 @@
 		C2552B1E1765BDDD00168CAA /* SampleDocumentViewer */ = {
 			isa = PBXGroup;
 			children = (
+				C2BEE1731774573900BA8DC3 /* audioview */,
 				C2552B6B1765C81300168CAA /* docview */,
 				C2552B5E1765C61000168CAA /* AppDelegate.h */,
 				C2552B5F1765C61000168CAA /* AppDelegate.m */,
 				C2552B601765C61000168CAA /* ViewController.h */,
 				C2552B611765C61000168CAA /* ViewController.m */,
-				C2552B621765C61000168CAA /* ViewController.xib */,
+				C29A819D17745A0A00C73622 /* ViewController.xib */,
 				C2552B4B1765C5CE00168CAA /* movieview */,
 				C2552B1F1765BDDD00168CAA /* Supporting Files */,
 			);
@@ -188,6 +197,17 @@
 			name = docview;
 			sourceTree = "<group>";
 		};
+		C2BEE1731774573900BA8DC3 /* audioview */ = {
+			isa = PBXGroup;
+			children = (
+				C2BEE1741774575C00BA8DC3 /* ctrl.png */,
+				C2BEE1751774575C00BA8DC3 /* AudioPlayerControllerView.h */,
+				C2BEE1761774575C00BA8DC3 /* AudioPlayerControllerView.m */,
+				C2BEE1771774575C00BA8DC3 /* AudioPlayerControllerView.xib */,
+			);
+			name = audioview;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -223,6 +243,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				ja,
 			);
 			mainGroup = C2552B0C1765BDDD00168CAA;
 			productRefGroup = C2552B161765BDDD00168CAA /* Products */;
@@ -250,8 +271,10 @@
 				C2552B571765C5E200168CAA /* slider_btn.png in Resources */,
 				C2552B5A1765C5E200168CAA /* MovieViewController.xib in Resources */,
 				C2552B5D1765C5E200168CAA /* PlayerControllerView.xib in Resources */,
-				C2552B651765C61000168CAA /* ViewController.xib in Resources */,
 				C2552B6A1765C61F00168CAA /* WebViewController.xib in Resources */,
+				C2BEE1781774575C00BA8DC3 /* ctrl.png in Resources */,
+				C2BEE17A1774575C00BA8DC3 /* AudioPlayerControllerView.xib in Resources */,
+				C29A819E17745A0A00C73622 /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +293,7 @@
 				C2552B631765C61000168CAA /* AppDelegate.m in Sources */,
 				C2552B641765C61000168CAA /* ViewController.m in Sources */,
 				C2552B691765C61F00168CAA /* WebViewController.m in Sources */,
+				C2BEE1791774575C00BA8DC3 /* AudioPlayerControllerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +304,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				C2552B221765BDDD00168CAA /* en */,
+				C29A819F17745DA300C73622 /* ja */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -299,7 +324,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kuriko Kobayashi (24SJSA4485)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -331,7 +356,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kuriko Kobayashi (24SJSA4485)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -348,6 +373,7 @@
 		C2552B391765BDDD00168CAA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kuriko Kobayashi (24SJSA4485)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SampleDocumentViewer/SampleDocumentViewer-Prefix.pch";
 				INFOPLIST_FILE = "SampleDocumentViewer/SampleDocumentViewer-Info.plist";
@@ -361,6 +387,7 @@
 		C2552B3A1765BDDD00168CAA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kuriko Kobayashi (24SJSA4485)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SampleDocumentViewer/SampleDocumentViewer-Prefix.pch";
 				INFOPLIST_FILE = "SampleDocumentViewer/SampleDocumentViewer-Info.plist";
